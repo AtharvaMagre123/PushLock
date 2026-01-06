@@ -11,7 +11,7 @@ export default function Home() {
     <View className="flex-1 items-center justify-center bg-black">
       <Pressable
         onPress={testNative}
-        className="bg-white px-6 py-3 rounded-xl mb-4"
+        className="bg-white px-6 py-3 rounded-xl"
       >
         <Text className="text-black font-semibold">
           Test Native Module
