@@ -41,7 +41,10 @@ export default({config}: ConfigContext): ExpoConfig => ({
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": getUniqueIdentifier()
+      "bundleIdentifier": getUniqueIdentifier(),
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to track your push-up movements and count repetitions."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -52,7 +55,10 @@ export default({config}: ConfigContext): ExpoConfig => ({
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": getUniqueIdentifier()
+      "package": getUniqueIdentifier(),
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "output": "static",
