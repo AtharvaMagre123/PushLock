@@ -8,24 +8,17 @@
       "developmentClient": true,
       "distribution": "internal",
       "android": {
-        "buildType": "apk",
-        "permissions": ["android.permission.CAMERA"]
+        "buildType": "apk"
       },
       "env": {
         "ANDROID_HOME": "/Users/atharva/Library/Android/sdk"
       }
     },
     "preview": {
-      "distribution": "internal",
-      "android": {
-        "permissions": ["android.permission.CAMERA"]
-      }
+      "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true,
-      "android": {
-        "permissions": ["android.permission.CAMERA"]
-      }
+      "autoIncrement": true
     }
   },
   "submit": {
